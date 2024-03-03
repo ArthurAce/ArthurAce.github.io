@@ -1,0 +1,43 @@
+.main {
+    max-height: 100vw;
+    position: relative;
+    &__img {
+        position: absolute;
+        display: block;
+        bottom: -7px;
+        right: 0;
+        width: 50%;
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    &__wrapper {
+        width: 600px;
+        padding-top: 200px;
+        color: #fff;
+        mix-blend-mode: difference;
+        transform: translate3d(0,0,0);
+    }
+    &__title {
+        font-size: 50px;
+    }
+    &__dscr {
+ 
+    } 
+    &__social {
+        font-size: 20px;
+        margin-top: 70px;
+        a {
+            text-decoration: none;
+            color: #fff;
+            &:hover {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+    .btn {
+        margin-top: 15px;
+    }
+}

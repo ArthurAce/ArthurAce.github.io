@@ -1,0 +1,13 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+@import "libs/bootstrap-reboot.min";
+@import "blocks/main";
+@import "blocks/background";
+@import "blocks/menu";
+@import "blocks/about";
+@import "blocks/button";
