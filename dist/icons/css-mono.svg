@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2019 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="84.6668mm" height="84.6667mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 306.51 306.51"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil2 {fill:none}
+    .fil4 {fill:#FEFEFE}
+    .fil0 {fill:#0B1215}
+    .fil1 {fill:#2D2F30}
+    .fil3 {fill:snow}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_779809560">
+   <polygon class="fil0" points="-0,0 306.51,0 278.55,275.99 152.89,306.51 27.32,275.96 "/>
+   <polygon class="fil1" points="152.89,19.36 282.17,19.28 258.8,260.97 153.25,287.05 "/>
+   <line class="fil2" x1="53.94" y1="54.86" x2="249.01" y2= "54.86" />
+   <polygon class="fil3" points="53.34,54.51 250.6,54.86 247.03,88.71 154.61,124.48 243.27,125.32 232.4,231.11 153.21,252.19 71.34,230.16 66.11,177.38 107.16,177.31 109.35,204.61 151.97,213.9 196.31,203.41 199.4,158.84 64.19,158.64 60.52,124.27 155.9,89.26 56.99,89.98 "/>
+   <polygon class="fil4" points="250.6,54.86 247.03,88.71 154.61,124.48 243.27,125.32 232.4,231.11 153.21,252.19 152.94,252.12 152.94,213.67 196.31,203.41 199.4,158.84 152.94,158.77 152.94,90.35 155.9,89.26 152.94,89.29 152.94,54.86 "/>
+  </g>
+ </g>
+</svg>

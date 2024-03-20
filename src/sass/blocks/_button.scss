@@ -1,6 +1,6 @@
 .btn {
-    --color: #ffffff;
-    --color2: rgb(0, 0, 0);
+    --color: var(--main-color);
+    --color2: var(--second-color);
     padding: 0.8em 1.75em;
     background-color: transparent;
     border-radius: 6px;
@@ -10,9 +10,7 @@
     overflow: hidden;
     cursor: pointer;
     z-index: 1;
-    font-weight: 300;
     font-size: 18px;
-    font-family: 'Roboto', 'Segoe UI', sans-serif;
     text-transform: uppercase;
     color: var(--color);
    }
@@ -51,5 +49,19 @@
    
    .btn:active {
     filter: brightness(.7);
-    transform: scale(.98);
+    transform: scale(1);
+   }
+
+   //form
+   .btn_form {
+    color: var(--color2);
+    border: .3px solid var(--color2);
+    margin-top: 50px;
+   }
+
+   .btn_form::after, .btn_form::before {
+    background-color: var(--color2);
+   }
+   .btn_form:hover {
+    color: var(--color);
    }

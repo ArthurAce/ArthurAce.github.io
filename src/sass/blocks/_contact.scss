@@ -1,0 +1,21 @@
+.contact {
+    position: relative;
+    height: 430px;
+    background: var(--main-color);
+    padding-top: 30px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        height: 400px;
+        width: 700px;
+        background: var(--second-color);
+        border-radius: 15px;
+        margin: 0 auto;
+        padding: 5px;
+    }
+    &__text {
+        color: var(--main-color);
+        font-size: 18px;
+        margin: 20px 50px;
+    }
+}

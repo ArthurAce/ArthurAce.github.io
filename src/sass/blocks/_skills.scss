@@ -1,0 +1,130 @@
+.skills {
+    position: relative;
+    height: 400px;
+    background: var(--main-color);
+    padding-top: 40px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 100px;
+    }
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(4, 65px);
+        grid-template-rows: repeat(3, 100px);
+        gap: 40px;
+        align-items: center;
+        justify-items: center;
+    }
+    &__item {
+        background-size: 100%;
+        width: 100%;
+        height: 100%;
+        &_html {
+            background: url('../icons/html.svg') center center/cover no-repeat;
+            animation: skills-html 6s ease-in-out infinite;
+        }
+        &_css {
+            background: url('../icons/css.svg') center center/cover no-repeat;
+            animation: skills-css 6s ease-in-out infinite;
+        }
+        &_js {
+            background: url('../icons/js.svg') center center/cover no-repeat;
+            animation: skills-js 6s ease-in-out infinite;
+        }
+        &_ts {
+            background: url('../icons/ts.svg') center center/cover no-repeat;
+            animation: skills-ts 6s ease-in-out infinite;
+        }
+        &_jq {
+            background: url('../icons/jq.svg') center center/cover no-repeat;
+            background-size: 95%;
+            animation: skills-jq 6s ease-in-out infinite;
+        }
+        &_bootstrap {
+            background: url('../icons/bootstrap.svg') center center/cover no-repeat;
+            animation: skills-bootstrap 6s ease-in-out infinite;
+        }
+        &_ps {
+            background: url('../icons/photoshop.svg') center center/cover no-repeat;
+            animation: skills-ps 6s ease-in-out infinite;
+        }
+        &_cd {
+            background: url('../icons/coreldraw.svg') center center/cover no-repeat;
+            animation: skills-cd 6s ease-in-out infinite;
+        }
+        &_figma {
+            background: url('../icons/figma.svg') center center/cover no-repeat;
+            animation: skills-figma 6s ease-in-out infinite;
+        }
+    }
+}
+
+@keyframes skills-html {
+    from { background: url('../icons/html.svg')center center/cover no-repeat;
+        background-size: 100%;}
+    50%{ background: url('../icons/html-mono.svg')center center/cover no-repeat;
+        background-size: 100%;}
+    to{ background: url('../icons/html.svg')center center/cover no-repeat;
+        background-size: 100%;}
+}
+@keyframes skills-css {
+    from { background: url('../icons/css.svg')center center/cover no-repeat;
+        background-size: 100%;}
+    50%{ background: url('../icons/css-mono.svg')center center/cover no-repeat;
+        background-size: 100%;}
+    to{ background: url('../icons/css.svg')center center/cover no-repeat;
+        background-size: 100%;}
+}
+@keyframes skills-js {
+    from { background: url('../icons/js.svg')center center/cover no-repeat;
+        background-size: 100%;}
+    50%{ background: url('../icons/js-mono.svg')center center/cover no-repeat;
+        background-size: 100%;}
+    to{ background: url('../icons/js.svg')center center/cover no-repeat;
+        background-size: 100%;}
+}
+@keyframes skills-ts {
+    from { background: url('../icons/ts.svg')center center/cover no-repeat;
+        background-size: 100%;}
+    50%{ background: url('../icons/ts-mono.svg')center center/cover no-repeat;
+        background-size: 100%;}
+    to{ background: url('../icons/ts.svg')center center/cover no-repeat;
+        background-size: 100%;}
+}
+@keyframes skills-bootstrap{
+    from { background: url('../icons/bootstrap.svg')center center/cover no-repeat;
+        background-size: 100%;}
+    50%{ background: url('../icons/bootstrap-mono.svg')center center/cover no-repeat;
+        background-size: 100%;}
+    to{ background: url('../icons/bootstrap.svg')center center/cover no-repeat;
+        background-size: 100%;}
+}
+@keyframes skills-ps {
+    from { background: url('../icons/photoshop.svg')center center/cover no-repeat;
+        background-size: 100%;}
+    50%{ background: url('../icons/photoshop-mono.svg')center center/cover no-repeat;
+        background-size: 100%;}
+    to{ background: url('../icons/photoshop.svg')center center/cover no-repeat;
+        background-size: 100%;}
+}
+@keyframes skills-cd {
+    from { background: url('../icons/coreldraw.svg')center center/cover no-repeat;
+        background-size: 80%;
+        }
+    50% { background: url('../icons/coreldraw-mono.svg')center center/cover no-repeat;
+        background-size: 80%;}
+    to { background: url('../icons/coreldraw.svg')center center/cover no-repeat;
+        background-size: 80%;}
+}
+@keyframes skills-figma {
+    from { background: url('../icons/figma.svg')center center/cover no-repeat;
+        background-size: 100%;}
+    40%{ background: url('../icons/figma-mono2.svg')center center/cover no-repeat;
+        background-size: 100%;}
+    60%{ background: url('../icons/figma-mono.svg')center center/cover no-repeat;
+        background-size: 100%;}
+    to{ background: url('../icons/figma.svg')center center/cover no-repeat;
+        background-size: 100%;}
+}
+
