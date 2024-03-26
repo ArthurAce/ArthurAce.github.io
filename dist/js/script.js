@@ -55,21 +55,80 @@ thumbnails.forEach((thumbnail, index) => {
 
 
 //modal
-$(document).ready(function () {
+/* $(document).ready(function () {
     $('[data-modal=form]').on('click', function () {
         $('.overlay, .form_modal, #form').fadeIn('slow');
     });
     $('.modal__close').on('click', function () {
         $('.overlay, .form_modal, .modal__mini, #form').fadeOut('slow');
-    })
-    $('.btn_form').on('click', function () {
+    });
+   $('#btn').on('click', function () {
         $('.form_modal, #form').fadeOut('slow');
         $('.overlay, .modal__mini').fadeIn('slow');
     })
 
-    $(".form").submit(function(e) {
-        e.preventDefault();
-    });
-});
 
+
+        $('form').submit(function(e) {
+          e.preventDefault();
+
+          if (!$(this).valid()) {
+            return;
+          };
+
+          $.ajax({
+              type: "POST",
+              url: "mailer/smart.php",
+              data: $(this).serialize()
+          }).done(function() {
+              $(this).find("input").val("");
+              $('.form_modal, #form').fadeOut('slow');
+              $('.overlay, .modal__mini').fadeIn('slow');
+  
+              $('form').trigger('reset');
+          });
+          return false;
+      });
+    
+
+    $('#modal-form, #contact-form').validate({
+        rules: {
+          name: "required",
+          checkbox: "required",
+          email: {
+            required: true,
+            email: true
+          }
+        },
+        messages: {
+          name: "Please, enter your name.",
+          checkbox: "Please, it's required.",
+          email: {
+            required: "I need your email address, to contact you.",
+            email: "Your email address must be in the format of name@domain.com"
+          }
+        }
+      });
+  }); */
+/* 
+      $('#contact-form').validate({
+        rules: {
+          name: "required",
+          checkbox: "required",
+          email: {
+            required: true,
+            email: true
+          }
+        },
+        messages: {
+          name: "Please, enter your name.",
+          checkbox: "Please, it's required.",
+          email: {
+            required: "I need your email address, to contact you.",
+            email: "Your email address must be in the format of name@domain.com"
+          }
+        }
+      }); */
+
+    
 

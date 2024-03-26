@@ -1,12 +1,12 @@
 .contact {
     position: relative;
-    height: 430px;
+    min-height: 430px;
     background: var(--main-color);
     padding-top: 30px;
     &__wrapper {
         display: flex;
         justify-content: space-between;
-        height: 400px;
+        min-height: 400px;
         width: 700px;
         background: var(--second-color);
         border-radius: 15px;

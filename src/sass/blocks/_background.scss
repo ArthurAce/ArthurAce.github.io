@@ -1,13 +1,20 @@
+@use 'sass:math';
+
+// @function custom-random($max) {
+//   @return math.floor(random() * ($max - 1) + 1);
+// }
 
   .background {
     max-width: 100vw;
     height: 100vh;
     background: var(--main-color);
   }
-  
+
   $particleSize: 24vmin;
-  $animationDuration: 6s;
+  $animationDuration: 6;
   $amount: 17;
+  $delayBase: math.div(math.random(), 10) * -1;
+
   .background span {
     width: $particleSize;
     height: $particleSize;
@@ -22,15 +29,19 @@
       #01080f,
       #0b1215
     );
+    //animation-duration: (random($animationDuration * 10) / 10) * 1s + 10s;
+   // animation-delay: random(($animationDuration + 10s) * 10) / 10 * -1s;
+    
+
     @for $i from 1 through $amount {
       &:nth-child(#{$i}) {
         color: nth($colors, random(length($colors)));
         top: random(100) * 1%;
         left: random(100) * 1%;
-        /* animation-duration: math.div(random($animationDuration * 7), 7) * 1s + 7s;
-        animation-delay: math.div(random(($animationDuration + 8s) * 8), 8) -1s; */
-        transform-origin: (random(50) - 25) * 1vw (random(50) - 25) * 1vh;
-        $blurRadius: (random() + 0.35) * $particleSize * 0.35;
+        animation-duration: math.random(calc($animationDuration * 10)) * 1s + 3000ms;
+        animation-delay: calc(#{$delayBase} * (#{$animationDuration} + 1)s);
+        transform-origin: (math.random(50) - 25) * 1vw (random(50) - 25) * 1vh;
+        $blurRadius: (random() + 0.25) * $particleSize * 0.25;
         $x: if(random() > 0.5, -1, 1);
         box-shadow: ($particleSize * 2 * $x) 0 $blurRadius currentColor;
       }

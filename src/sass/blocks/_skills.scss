@@ -6,13 +6,13 @@
     &__wrapper {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        gap: 100px;
+        gap: 80px;
     }
     &__box {
         display: grid;
-        grid-template-columns: repeat(4, 65px);
-        grid-template-rows: repeat(3, 100px);
-        gap: 40px;
+        grid-template-columns: repeat(4, 75px);
+        grid-template-rows: repeat(3, 80px);
+        gap: 30px;
         align-items: center;
         justify-items: center;
     }
@@ -22,40 +22,49 @@
         height: 100%;
         &_html {
             background: url('../icons/html.svg') center center/cover no-repeat;
-            animation: skills-html 6s ease-in-out infinite;
+            animation: skills-html 6s 0.1s ease-in-out infinite;
         }
         &_css {
             background: url('../icons/css.svg') center center/cover no-repeat;
-            animation: skills-css 6s ease-in-out infinite;
+            animation: skills-css 6s 0.3s ease-in-out infinite;
         }
         &_js {
             background: url('../icons/js.svg') center center/cover no-repeat;
-            animation: skills-js 6s ease-in-out infinite;
+            animation: skills-js 6s 0.8s ease-in-out infinite;
         }
         &_ts {
             background: url('../icons/ts.svg') center center/cover no-repeat;
-            animation: skills-ts 6s ease-in-out infinite;
+            animation: skills-ts 6s 0.6s ease-in-out infinite;
         }
         &_jq {
             background: url('../icons/jq.svg') center center/cover no-repeat;
             background-size: 95%;
-            animation: skills-jq 6s ease-in-out infinite;
+            animation: skills-jq 6s 0.9s ease-in-out infinite;
         }
         &_bootstrap {
             background: url('../icons/bootstrap.svg') center center/cover no-repeat;
-            animation: skills-bootstrap 6s ease-in-out infinite;
+            animation: skills-bootstrap 6s 0.4s ease-in-out infinite;
         }
         &_ps {
             background: url('../icons/photoshop.svg') center center/cover no-repeat;
-            animation: skills-ps 6s ease-in-out infinite;
+            animation: skills-ps 6s 0.4s ease-in-out infinite;
         }
         &_cd {
             background: url('../icons/coreldraw.svg') center center/cover no-repeat;
-            animation: skills-cd 6s ease-in-out infinite;
+            animation: skills-cd 6s 0.2s ease-in-out infinite;
         }
         &_figma {
             background: url('../icons/figma.svg') center center/cover no-repeat;
-            animation: skills-figma 6s ease-in-out infinite;
+            animation: skills-figma 6s 0.8s ease-in-out infinite;
+            background-size: 95%;
+        }
+        &_git {
+            background: url('../icons/git.svg') center center/cover no-repeat;
+            background-size: 95%;
+        }
+        &_github {
+            background: url('../icons/github.svg') center center/cover no-repeat;
+            animation: skills-github 6s 0.7s ease-in-out infinite;
         }
     }
 }
@@ -127,4 +136,12 @@
     to{ background: url('../icons/figma.svg')center center/cover no-repeat;
         background-size: 100%;}
 }
-
+@keyframes skills-github {
+    from { background: url('../icons/github.svg')center center/cover no-repeat;
+        background-size: 100%;
+        }
+    50% { background: url('../icons/github-mono.svg')center center/cover no-repeat;
+        background-size: 100%;}
+    to { background: url('../icons/github.svg')center center/cover no-repeat;
+        background-size: 100%;}
+}
